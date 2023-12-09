@@ -33,7 +33,6 @@
 #include <cstdint>
 #include <memory>
 #include <vector>
-
 #include "base/sat_counter.hh"
 #include "base/types.hh"
 #include "mem/cache/base.hh"
