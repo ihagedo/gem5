@@ -206,7 +206,7 @@ namespace gem5
     {
         return skew(addr >> setShift, way) & setMask;
     }
-
+/*
     void
     ZCache::setEntry(ReplaceableEntry *entry, const uint64_t index)
     {
@@ -224,7 +224,7 @@ namespace gem5
         // Inform the entry its position
         entry->setPosition(set, way, -1);
     }
-
+*/
     Addr
     ZCache::regenerateAddr(const Addr tag,
                                       const ReplaceableEntry *entry) const

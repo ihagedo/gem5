@@ -173,6 +173,18 @@ class SkewedAssociative : public BaseIndexingPolicy
      */
     Addr regenerateAddr(const Addr tag, const ReplaceableEntry* entry) const
                                                                    override;
+/**
+     * Associate a pointer to an entry to its physical counterpart.
+     *
+     * @param entry The entry pointer.
+     * @param index An unique index for the entry.
+     */
+    /*
+    void
+    setEntry(ReplaceableEntry *entry, const uint64_t index)
+    override;
+    */
+
 };
 
 } // namespace gem5

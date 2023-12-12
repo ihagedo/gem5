@@ -37,7 +37,7 @@
 #include <vector>
 
 #include "mem/cache/tags/indexing_policies/base.hh"
-#include "params/SkewedAssociative.hh"
+#include "params/ZCache.hh"
 
 namespace gem5
 {
@@ -141,7 +141,7 @@ namespace gem5
 
     public:
         /** Convenience typedef. */
-        typedef SkewedAssociativeParams Params;
+        typedef ZCache Params;
 
         /**
          * Construct and initialize this policy.
@@ -159,10 +159,11 @@ namespace gem5
          * @param entry The entry pointer.
          * @param index An unique index for the entry.
          */
+/*
         void
         setEntry(ReplaceableEntry *entry, const uint64_t index)
         override;
-
+*/
         /**
          * Find all possible entries for insertion and replacement of an address.
          * Should be called immediately before ReplacementPolicy's findVictim()
@@ -183,7 +184,7 @@ namespace gem5
          * @return the entry's address.
          */
         Addr regenerateAddr(const Addr tag, const ReplaceableEntry *entry) const
-            override;
+        override;   
     };
 
 } // namespace gem5

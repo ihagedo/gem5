@@ -77,6 +77,12 @@ BaseIndexingPolicy::getEntry(const uint32_t set, const uint32_t way) const
     return sets[set][way];
 }
 
+Addr
+BaseIndexingPolicy::extractTag(const Addr addr) const
+{
+    return (addr >> tagShift);
+}
+
 void
 BaseIndexingPolicy::setEntry(ReplaceableEntry* entry, const uint64_t index)
 {
@@ -93,12 +99,6 @@ BaseIndexingPolicy::setEntry(ReplaceableEntry* entry, const uint64_t index)
 
     // Inform the entry its position
     entry->setPosition(set, way);
-}
-
-Addr
-BaseIndexingPolicy::extractTag(const Addr addr) const
-{
-    return (addr >> tagShift);
 }
 
 } // namespace gem5
