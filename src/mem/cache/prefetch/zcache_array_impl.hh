@@ -45,8 +45,7 @@ namespace gem5
                                                "ZCache<> must be a power of 2");
             fatal_if(!isPowerOf2(assoc), "The associativity of a ZCache<> "
                                          "must be a power of 2");
-            // Potential TODO: Verify that numEntries can be used to calculate the number of lines to use
-            // Potential TODO: Figure out if associativity == ways
+                
             // The number of associative sets is obtained by dividing numEntries by associativity.
 
             for (unsigned int entry_idx = 0; entry_idx < (numEntries + associativity); entry_idx += 1)
