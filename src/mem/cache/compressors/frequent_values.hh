@@ -33,12 +33,14 @@
 #include <cstdint>
 #include <memory>
 #include <vector>
+
 #include "base/sat_counter.hh"
 #include "base/types.hh"
 #include "mem/cache/base.hh"
 #include "mem/cache/compressors/base.hh"
 #include "mem/cache/compressors/encoders/huffman.hh"
 #include "mem/cache/prefetch/associative_set.hh"
+#include "mem/cache/prefetch/zcache_array.hh"
 #include "sim/eventq.hh"
 #include "sim/probe/probe.hh"
 

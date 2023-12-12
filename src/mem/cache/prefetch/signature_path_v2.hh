@@ -43,6 +43,7 @@
 
 #include "mem/cache/prefetch/associative_set.hh"
 #include "mem/cache/prefetch/signature_path.hh"
+#include "mem/cache/prefetch/zcache_array.hh"
 #include "mem/packet.hh"
 
 namespace gem5

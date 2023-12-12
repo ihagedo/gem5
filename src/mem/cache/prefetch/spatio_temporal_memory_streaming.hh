@@ -46,6 +46,7 @@
 #include "base/circular_queue.hh"
 #include "base/sat_counter.hh"
 #include "mem/cache/prefetch/associative_set.hh"
+#include "mem/cache/prefetch/zcache_array.hh"
 #include "mem/cache/prefetch/queued.hh"
 
 namespace gem5
